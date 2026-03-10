@@ -43,7 +43,7 @@ def analytics_page():
 
 @app.route('/attendance_stats', methods=['GET'])
 def attendance_stats():
-    start_date = request.args.get('start_date', '2023-01-01')  # Default start date
+    start_date = request.args.get('start_date', '2023-01-01')
     end_date = request.args.get('end_date', datetime.today().strftime('%Y-%m-%d'))
     student_name = request.args.get('student_name', None)  # Optional filter by student
 
